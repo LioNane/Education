@@ -50,7 +50,7 @@ public class Student {
     }
 
     public void addCredits(int c){
-        credits++;
+        credits = credits + c;
     }
     public void updateGPA(double newGPA){
         gpa = newGPA;
@@ -61,11 +61,12 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student {Full name: " + name +
-                " ID: " + id +
-                " Academic program: " + major +
-                " GPA: " + gpa +
-                " Credits: " + credits;
+        return "Student {Full name: " + name + "\n" +
+                " ID: " + id +  "\n" +
+                " Academic program: " + major +  "\n" +
+                " GPA: " + gpa +  "\n" +
+                " Credits: " + credits + "\n" +
+                " Honors? - " + isHonors() + "} \n";
 
     }
 }
